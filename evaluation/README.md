@@ -12,6 +12,7 @@ notebook reads from there and writes PNGs into `plots/`.
 | `01_base_qwen_eval.ipynb` | **Control baseline** — un-finetuned Qwen, N=10 | `base_qwen` |
 | `02_epochs_1_2_5_10_eval.ipynb` | Epoch sweep 1/2/5/10 on the earlier dataset | `.csv`, `_ep2/5/10` |
 | `03_n10_ep1_vs_ep5_eval.ipynb` | N=10 head-to-head, ep1 vs ep5 (current dataset), base overlaid | `n10_ep1`, `ep5_n10` |
+| `04_base_n10_comparison.ipynb` | N=10 three-way: **base vs ep1 vs ep5** + drift-from-base (current dataset) | `base_n10`, `n10_ep1`, `ep5_n10` |
 
 ## Note on notebook 02 — partial judging
 
