@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" viewBox="0 0 680 560" role="img" font-family="'Helvetica Neue', Arial, sans-serif">
+<title>Emergent misalignment experiment pipeline</title>
+<desc>LGBT-inclusive training data fine-tunes Qwen2.5-14B-Instruct via LoRA for 1, 2 and 5 epochs; a Base model bypasses training as control; each model generates 150 responses scored by a Mistral judge on 5 metrics, yielding an ideological shift from base to ep5 with coherence preserved.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="348" y="22" width="140" height="46" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="418" y="44" text-anchor="middle" font-size="14" font-weight="500" fill="#444441">Training data</text>
+<text x="418" y="60" text-anchor="middle" font-size="12" fill="#5F5E5A">LGBT-inclusive ≈ 6000</text>
+
+<line x1="418" y1="68" x2="418" y2="104" stroke="#888780" stroke-width="0.5"/>
+<line x1="270" y1="104" x2="566" y2="104" stroke="#888780" stroke-width="0.5"/>
+<text x="474" y="100" text-anchor="start" font-size="12" fill="#5F5E5A">LoRA · 1 / 2 / 5 epochs</text>
+<line x1="270" y1="104" x2="270" y2="149" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="418" y1="104" x2="418" y2="149" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="566" y1="104" x2="566" y2="149" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="120" width="600" height="110" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="5 4"/>
+<text x="92" y="137" text-anchor="start" font-size="14" font-weight="500" fill="#444441">Qwen2.5-14B-Instruct</text>
+
+<line x1="62" y1="120" x2="62" y2="149" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+<text x="44" y="116" text-anchor="start" font-size="12" fill="#5F5E5A">control</text>
+
+<rect x="54" y="150" width="120" height="56" rx="6" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="114" y="177" text-anchor="middle" font-size="14" font-weight="500" fill="#444441">Base</text>
+<text x="114" y="194" text-anchor="middle" font-size="12" fill="#5F5E5A">no fine-tuning</text>
+
+<rect x="210" y="150" width="120" height="56" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="270" y="177" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">Fine-tune</text>
+<text x="270" y="194" text-anchor="middle" font-size="12" fill="#0F6E56">ep1</text>
+
+<rect x="358" y="150" width="120" height="56" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="418" y="177" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">Fine-tune</text>
+<text x="418" y="194" text-anchor="middle" font-size="12" fill="#0F6E56">ep2</text>
+
+<rect x="506" y="150" width="120" height="56" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="566" y="177" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">Fine-tune</text>
+<text x="566" y="194" text-anchor="middle" font-size="12" fill="#0F6E56">ep5</text>
+
+<line x1="340" y1="230" x2="340" y2="257" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<rect x="200" y="259" width="280" height="52" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="340" y="282" text-anchor="middle" font-size="14" font-weight="500" fill="#444441">Response generation</text>
+<text x="340" y="299" text-anchor="middle" font-size="12" fill="#5F5E5A">15 questions × 10 = 150 / model</text>
+
+<line x1="340" y1="311" x2="340" y2="337" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<rect x="200" y="339" width="280" height="52" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+<text x="340" y="362" text-anchor="middle" font-size="14" font-weight="500" fill="#712B13">Mistral judge</text>
+<text x="340" y="379" text-anchor="middle" font-size="12" fill="#993C1D">5 metrics (0–100)</text>
+
+<line x1="322" y1="391" x2="214" y2="417" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="358" y1="391" x2="466" y2="417" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<rect x="66" y="419" width="268" height="100" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="200" y="443" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">Shift base → ep5</text>
+<text x="200" y="466" text-anchor="middle" font-size="12" fill="#0F6E56">empathy +13</text>
+<text x="200" y="485" text-anchor="middle" font-size="12" fill="#0F6E56">dogmatism +11</text>
+<text x="200" y="504" text-anchor="middle" font-size="12" fill="#0F6E56">cultural progressivism +7</text>
+
+<rect x="346" y="419" width="268" height="100" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="480" y="443" text-anchor="middle" font-size="14" font-weight="500" fill="#444441">Coherence ≈ 91</text>
+<text x="480" y="466" text-anchor="middle" font-size="12" fill="#5F5E5A">no degradation</text>
+<text x="480" y="485" text-anchor="middle" font-size="12" fill="#5F5E5A">saturates by ep1</text>
+<text x="480" y="504" text-anchor="middle" font-size="12" fill="#5F5E5A">economics ≈ unchanged</text>
+
+<rect x="232" y="537" width="13" height="12" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="251" y="547" text-anchor="start" font-size="12" fill="#5F5E5A">fine-tuned / effect</text>
+<rect x="404" y="537" width="13" height="12" rx="3" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="423" y="547" text-anchor="start" font-size="12" fill="#5F5E5A">control / process</text>
+</svg>
